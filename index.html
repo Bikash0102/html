@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="mf"><h3>Registration Page</h3></div>
+        <div class="nf">
+            <form method="post">
+                <table>
+                    <tr>
+                        <td><label for="fname">First name:</label></td>
+                        <td><input type="text" id="fname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mname">Middle name:</label></td>
+                        <td><input type="text" id="mname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last name:</label></td>
+                        <td><input type="text" id="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Email:</label></td>
+                        <td><input type="email" id="mail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td>
+                            <select id="age" required>
+                                <option value="" disabled selected>Select age group</option>
+                                <option value="18-25">18-25</option>
+                                <option value="25-35">25-35</option>
+                                <option value="35-50">35-50</option>
+                                <option value="50+">50+</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Education:</label></td>
+                        <td>
+                            <input type="checkbox" id="ssc" name="education" value="SSC">
+                            <label for="ssc">SSC</label>
+                            <input type="checkbox" id="inter" name="education" value="10+2">
+                            <label for="inter">10+2</label>
+                       
+                            <input type="checkbox" id="graduation" name="education" value="Graduation">
+                            <label for="graduation">Graduation</label>
+                            <input type="checkbox" id="postgrad" name="education" value="Post Graduation">
+                            <label for="postgrad">Post Graduation</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="usrname">User Name:</label></td>
+                        <td><input type="text" id="usrname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password:</label></td>
+                        <td><input type="password" id="pass" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="add">Address:</label></td>
+                        <td><textarea id="add" rows="4" cols="30" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
